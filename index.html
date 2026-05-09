@@ -9,15 +9,23 @@ body{font-family:'PingFang SC','Helvetica Neue','Microsoft YaHei',sans-serif;bac
 .topnav .logo{color:rgba(255,255,255,.95);font-weight:700;font-size:13px;padding:14px 18px 14px 0;border-right:1px solid rgba(255,255,255,.2);margin-right:4px;white-space:nowrap;}
 .topnav a{color:rgba(255,255,255,.75);text-decoration:none;padding:14px 16px;font-size:12px;white-space:nowrap;border-radius:4px;transition:.15s;}
 .topnav a:hover{background:rgba(255,255,255,.14);color:white;}
-.hero{background:linear-gradient(135deg,#3a5a8a 0%,#4e729c 60%,#6a8fba 100%);color:white;padding:36px 40px 32px;}
-.hero-label{font-size:11px;font-weight:600;letter-spacing:2px;opacity:.75;margin-bottom:10px;}
-.hero-title{font-size:26px;font-weight:800;line-height:1.3;}
-.hero-sub{font-size:13px;opacity:.8;margin-top:10px;display:flex;align-items:center;gap:8px;flex-wrap:wrap;}
-.hero-pills{display:flex;gap:12px;flex-wrap:wrap;margin-top:20px;}
-.hero-pill{background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.28);border-radius:12px;padding:10px 22px;text-align:center;}
-.hero-pill .pill-val{font-size:28px;font-weight:800;line-height:1.1;}
-.hero-pill .pill-lbl{font-size:11px;opacity:.8;margin-top:3px;}
-.hero-date{display:inline-flex;align-items:center;gap:6px;background:rgba(255,255,255,.18);border-radius:20px;padding:4px 14px;font-size:12px;font-weight:600;margin-top:14px;}
+.hero{background:linear-gradient(135deg,#3a5a8a 0%,#4e729c 60%,#6a8fba 100%);color:white;padding:32px 40px 28px;}
+.hero-eyebrow{display:flex;align-items:center;gap:10px;margin-bottom:14px;}
+.hero-eyebrow-tag{font-size:11px;font-weight:600;letter-spacing:1.5px;opacity:.65;text-transform:uppercase;}
+.hero-eyebrow-dot{width:4px;height:4px;border-radius:50%;background:rgba(255,255,255,.4);}
+.hero-eyebrow-date{font-size:11px;background:rgba(255,255,255,.18);border-radius:20px;padding:2px 10px;font-weight:600;opacity:.9;}
+.hero-main{display:flex;align-items:flex-end;gap:20px;flex-wrap:wrap;}
+.hero-title{font-size:30px;font-weight:800;line-height:1.2;letter-spacing:-.3px;}
+.hero-title .period{font-size:16px;font-weight:600;opacity:.8;margin-left:8px;vertical-align:middle;}
+.hero-count{text-align:right;margin-left:auto;}
+.hero-count-val{font-size:46px;font-weight:900;line-height:1;}
+.hero-count-lbl{font-size:11px;opacity:.6;margin-top:2px;}
+.hero-meta{display:flex;align-items:center;gap:20px;flex-wrap:wrap;margin-top:18px;padding-top:16px;border-top:1px solid rgba(255,255,255,.15);}
+.hero-meta-item{display:flex;flex-direction:column;align-items:center;}
+.hero-meta-val{font-size:22px;font-weight:800;line-height:1.1;}
+.hero-meta-lbl{font-size:10px;opacity:.6;margin-top:3px;white-space:nowrap;}
+.hero-meta-sep{width:1px;height:36px;background:rgba(255,255,255,.18);}
+.hero-meta-info{font-size:12px;opacity:.7;margin-left:auto;line-height:1.7;text-align:right;}
 .content{padding:28px 36px;display:flex;flex-direction:column;gap:20px;}
 .card{background:white;border-radius:12px;overflow:hidden;box-shadow:0 1px 6px rgba(0,0,0,.08);}
 .card-title{color:white;font-size:13px;font-weight:700;padding:10px 18px;letter-spacing:.5px;}
@@ -59,21 +67,35 @@ html{scroll-behavior:smooth;}</style></head><body>
   <a href="#date-section">④ 渠道×日期</a>
 </nav>
 <div class="hero">
-  <div class="hero-label">直播号订单数据播报</div>
-  <div class="hero-title">📦 未退款订单快照<br>春11期0508</div>
-  <div class="hero-sub">
-    <span>口径：订单状态 ≠ 已关闭</span>
-    <span style="opacity:.4;">｜</span>
-    <span>快照日期：2026-05-08</span>
-    <span style="opacity:.4;">｜</span>
-    <span>七日范围：2026-05-02 ~ 2026-05-08</span>
+  <div class="hero-eyebrow">
+    <span class="hero-eyebrow-tag">直播号订单播报</span>
+    <span class="hero-eyebrow-dot"></span>
+    <span class="hero-eyebrow-date">📅 春11期 · 0508</span>
   </div>
-  <div class="hero-pills">
-    <div class="hero-pill"><div class="pill-val">388</div><div class="pill-lbl">快照未退款单（05-08）</div></div>
-    <div class="hero-pill"><div class="pill-val">1136</div><div class="pill-lbl">七日未退款合计</div></div>
-    <div class="hero-pill"><div class="pill-val">7</div><div class="pill-lbl">渠道数</div></div>
+  <div class="hero-main">
+    <div>
+      <div class="hero-title">📦 未退款订单快照<span class="period">春11期0508</span></div>
+    </div>
+    <div class="hero-count">
+      <div class="hero-count-val">388</div>
+      <div class="hero-count-lbl">快照单量（05-08）</div>
+    </div>
   </div>
-  <div class="hero-date">📅 春11期 · 0508 数据</div>
+  <div class="hero-meta">
+    <div class="hero-meta-item">
+      <div class="hero-meta-val">1136</div>
+      <div class="hero-meta-lbl">七日未退款合计</div>
+    </div>
+    <div class="hero-meta-sep"></div>
+    <div class="hero-meta-item">
+      <div class="hero-meta-val">7</div>
+      <div class="hero-meta-lbl">渠道数</div>
+    </div>
+    <div class="hero-meta-info">
+      口径：订单状态 ≠ 已关闭<br>
+      七日范围：2026-05-02 ~ 2026-05-08
+    </div>
+  </div>
 </div>
 <div class="content" id="snap-top">
   <div class="card"><div class="card-title" style="background:#4a6fa5;">渠道对比</div>
