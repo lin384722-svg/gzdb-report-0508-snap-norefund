@@ -26,6 +26,7 @@ body{font-family:'PingFang SC','Helvetica Neue','Microsoft YaHei',sans-serif;bac
 .hero-meta-lbl{font-size:10px;opacity:.6;margin-top:3px;white-space:nowrap;}
 .hero-meta-sep{width:1px;height:36px;background:rgba(255,255,255,.18);}
 .hero-meta-info{font-size:12px;opacity:.7;margin-left:auto;line-height:1.7;text-align:right;}
+.hero-meta-item:first-child .hero-meta-val{font-size:42px;font-weight:900;}
 .content{padding:28px 36px;display:flex;flex-direction:column;gap:20px;}
 .card{background:white;border-radius:12px;overflow:hidden;box-shadow:0 1px 6px rgba(0,0,0,.08);}
 .card-title{color:white;font-size:13px;font-weight:700;padding:10px 18px;letter-spacing:.5px;}
@@ -73,15 +74,14 @@ html{scroll-behavior:smooth;}</style></head><body>
     <span class="hero-eyebrow-date">📅 春11期 · 0508</span>
   </div>
   <div class="hero-main">
-    <div>
-      <div class="hero-title">📦 未退款订单快照<span class="period">春11期0508</span></div>
-    </div>
-    <div class="hero-count">
-      <div class="hero-count-val">388</div>
-      <div class="hero-count-lbl">快照单量（05-08）</div>
-    </div>
+    <div class="hero-title">📦 未退款订单快照<span class="period">春11期0508</span></div>
   </div>
   <div class="hero-meta">
+    <div class="hero-meta-item">
+      <div class="hero-meta-val">388</div>
+      <div class="hero-meta-lbl">快照单量（05-08）</div>
+    </div>
+    <div class="hero-meta-sep"></div>
     <div class="hero-meta-item">
       <div class="hero-meta-val">1136</div>
       <div class="hero-meta-lbl">七日未退款合计</div>
