@@ -5,34 +5,23 @@
 <style>
 *{box-sizing:border-box;margin:0;padding:0;}
 body{font-family:'PingFang SC','Helvetica Neue','Microsoft YaHei',sans-serif;background:#f2f5f9;color:#2c3a4a;line-height:1.5;}
-
-/* 顶部导航 */
 .topnav{position:sticky;top:0;z-index:100;background:#3a5a8a;display:flex;align-items:center;padding:0 28px;gap:4px;box-shadow:0 2px 12px rgba(0,0,0,.18);overflow-x:auto;}
-.topnav .logo{color:rgba(255,255,255,.95);font-weight:700;font-size:13px;padding:14px 18px 14px 0;border-right:1px solid rgba(255,255,255,.2);margin-right:4px;white-space:nowrap;letter-spacing:.5px;}
+.topnav .logo{color:rgba(255,255,255,.95);font-weight:700;font-size:13px;padding:14px 18px 14px 0;border-right:1px solid rgba(255,255,255,.2);margin-right:4px;white-space:nowrap;}
 .topnav a{color:rgba(255,255,255,.75);text-decoration:none;padding:14px 16px;font-size:12px;white-space:nowrap;border-radius:4px;transition:.15s;}
 .topnav a:hover{background:rgba(255,255,255,.14);color:white;}
-
-/* 大头部 */
 .hero{background:linear-gradient(135deg,#3a5a8a 0%,#4e729c 60%,#6a8fba 100%);color:white;padding:36px 40px 32px;}
-.hero-label{font-size:11px;font-weight:600;letter-spacing:2px;opacity:.75;text-transform:uppercase;margin-bottom:10px;}
-.hero-title{font-size:26px;font-weight:800;letter-spacing:.5px;line-height:1.3;}
+.hero-label{font-size:11px;font-weight:600;letter-spacing:2px;opacity:.75;margin-bottom:10px;}
+.hero-title{font-size:26px;font-weight:800;line-height:1.3;}
 .hero-sub{font-size:13px;opacity:.8;margin-top:10px;display:flex;align-items:center;gap:8px;flex-wrap:wrap;}
 .hero-pills{display:flex;gap:12px;flex-wrap:wrap;margin-top:20px;}
 .hero-pill{background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.28);border-radius:12px;padding:10px 22px;text-align:center;}
 .hero-pill .pill-val{font-size:28px;font-weight:800;line-height:1.1;}
 .hero-pill .pill-lbl{font-size:11px;opacity:.8;margin-top:3px;}
 .hero-date{display:inline-flex;align-items:center;gap:6px;background:rgba(255,255,255,.18);border-radius:20px;padding:4px 14px;font-size:12px;font-weight:600;margin-top:14px;}
-
-/* 内容区 */
 .content{padding:28px 36px;display:flex;flex-direction:column;gap:20px;}
-
-/* 卡片 */
 .card{background:white;border-radius:12px;overflow:hidden;box-shadow:0 1px 6px rgba(0,0,0,.08);}
 .card-title{color:white;font-size:13px;font-weight:700;padding:10px 18px;letter-spacing:.5px;}
-
 .section-sep{border-top:2px dashed #d0dbe8;margin:4px 0;}
-
-/* 表格 */
 .table-wrap{overflow-x:auto;}
 .table-wrap.inner{border-radius:0 0 8px 8px;}
 table{width:max-content;min-width:100%;border-collapse:collapse;font-size:13px;}
@@ -49,9 +38,8 @@ tbody tr:hover td{background:#f7f9fc!important;}
 .subtotal-cell.strong{font-weight:800;}
 .grand-total-row{background:#3a5a8a;color:white;font-weight:800;}
 .grand-total-row th{padding:11px 18px;}
-.alert-cell{background:#fdf0ee!important;color:#c0392b!important;font-weight:700!important;border-radius:4px;}
-
-/* 渠道折叠块 */
+.alert-cell{background:#fdf0ee!important;color:#c0392b!important;font-weight:700!important;}
+.rhythm-tag{display:inline-block;font-size:11px;font-weight:600;padding:2px 9px;border-radius:10px;white-space:nowrap;}
 .ch-block{border-bottom:1px solid #edf0f5;}
 .ch-block:last-child{border-bottom:none;}
 .ch-block[open] .expand-hint{display:none;}
@@ -63,19 +51,13 @@ tbody tr:hover td{background:#f7f9fc!important;}
 .ch-dot{display:inline-block;width:8px;height:8px;border-radius:50%;vertical-align:middle;flex-shrink:0;}
 .ch-dot.lg{width:10px;height:10px;}
 .expand-hint{font-size:11px;color:#aab4c4;margin-left:auto;}
-
-/* 提示条 */
-.tip{font-size:11px;color:#6b7a90;background:#f5f7fb;border-left:3px solid #c5d4e8;padding:6px 14px;margin:0;display:block;}
-
-html{scroll-behavior:smooth;}
-</style></head><body>
-
+.tip{font-size:11px;color:#6b7a90;background:#f5f7fb;border-left:3px solid #c5d4e8;padding:6px 14px;display:block;}
+html{scroll-behavior:smooth;}</style></head><body>
 <nav class="topnav">
   <div class="logo">📦 未退款快照</div>
   <a href="#snap-top">渠道 / 年级 / 达人</a>
   <a href="#date-section">④ 渠道×日期</a>
 </nav>
-
 <div class="hero">
   <div class="hero-label">直播号订单数据播报</div>
   <div class="hero-title">📦 未退款订单快照<br>春11期0508</div>
@@ -87,30 +69,18 @@ html{scroll-behavior:smooth;}
     <span>七日范围：2026-05-02 ~ 2026-05-08</span>
   </div>
   <div class="hero-pills">
-    <div class="hero-pill">
-      <div class="pill-val">388</div>
-      <div class="pill-lbl">快照未退款单（05-08）</div>
-    </div>
-    <div class="hero-pill">
-      <div class="pill-val">1136</div>
-      <div class="pill-lbl">七日未退款合计</div>
-    </div>
-    <div class="hero-pill">
-      <div class="pill-val">7</div>
-      <div class="pill-lbl">渠道数</div>
-    </div>
+    <div class="hero-pill"><div class="pill-val">388</div><div class="pill-lbl">快照未退款单（05-08）</div></div>
+    <div class="hero-pill"><div class="pill-val">1136</div><div class="pill-lbl">七日未退款合计</div></div>
+    <div class="hero-pill"><div class="pill-val">7</div><div class="pill-lbl">渠道数</div></div>
   </div>
   <div class="hero-date">📅 春11期 · 0508 数据</div>
 </div>
-
 <div class="content" id="snap-top">
-  
-<div class="card">
-  <div class="card-title" style="background:#4a6fa5;">渠道对比</div>
-  <div class="table-wrap"><table>
-    <thead><tr style="background:#edf2f9;color:#2d4d7a;">
-      <th>渠道</th><th>未退款订单</th><th>主动加微率</th><th>退款率</th><th>撞库率</th>
-    </tr></thead><tbody><tr>
+  <div class="card"><div class="card-title" style="background:#4a6fa5;">渠道对比</div>
+<div class="table-wrap"><table>
+  <thead><tr style="background:#edf2f9;color:#2d4d7a;">
+    <th>渠道</th><th>未退款订单</th><th>主动加微率</th><th>退款率</th><th>撞库率</th>
+  </tr></thead><tbody><tr>
     <td class="td-left"><span class="ch-dot" style="background:#5c3d8f;"></span>最小年轮</td>
     <td class="num">206</td>
     <td >49.0%</td>
@@ -152,16 +122,14 @@ html{scroll-behavior:smooth;}
     <td >100.0%</td>
     <td >0.0%</td>
     <td >0.0%</td>
-  </tr><tr class="total-row"><td class="td-left">总计</td><td class="num">388</td><td></td><td></td><td></td></tr></tbody></table></div></div>
-<div class="card">
-  <div class="card-title" style="background:#4a6fa5;">分年级进量</div>
-  <div class="table-wrap"><table>
-    <thead><tr style="background:#edf2f9;color:#2d4d7a;">
-      <th>年级</th><th>未退款订单</th><th>占比</th>
-    </tr></thead><tbody><tr><td class="td-left">初三(升高一)</td><td class="num">350</td><td>90.2%</td></tr><tr><td class="td-left">高一(升高二)</td><td class="num">32</td><td>8.2%</td></tr><tr><td class="td-left">高二(升高三)</td><td class="num">6</td><td>1.5%</td></tr><tr class="total-row"><td class="td-left">总计</td><td class="num">388</td><td>100%</td></tr></tbody></table></div></div>
-<div class="card">
-  <div class="card-title" style="background:#4a6fa5;">分达人进量</div>
-  <div class="tip">点击渠道行展开达人详情</div><details class="ch-block">
+  </tr><tr class="total-row"><td class="td-left">总计</td><td class="num">388</td><td></td><td></td><td></td></tr>
+</tbody></table></div></div><div class="card"><div class="card-title" style="background:#4a6fa5;">分年级进量</div>
+<div class="table-wrap"><table>
+  <thead><tr style="background:#edf2f9;color:#2d4d7a;">
+    <th>年级</th><th>未退款订单</th><th>占比</th>
+  </tr></thead><tbody><tr><td class="td-left">初三(升高一)</td><td class="num">350</td><td>90.2%</td></tr><tr><td class="td-left">高一(升高二)</td><td class="num">32</td><td>8.2%</td></tr><tr><td class="td-left">高二(升高三)</td><td class="num">6</td><td>1.5%</td></tr><tr class="total-row"><td class="td-left">总计</td><td class="num">388</td><td>100%</td></tr>
+</tbody></table></div></div><div class="card"><div class="card-title" style="background:#4a6fa5;">分达人进量</div>
+<div class="tip">点击渠道行展开达人详情</div><details class="ch-block">
   <summary class="ch-summary">
     <span class="ch-dot lg" style="background:#5c3d8f;"></span>
     <span class="ch-name">最小年轮</span>
@@ -406,11 +374,10 @@ html{scroll-behavior:smooth;}
       <td >0.0%</td>
       <td >0.0%</td>
     </tr></tbody></table></div></details></div>
-  <div id="date-section">
-<div class="section-sep"></div>
+  <div id="date-section"><div class="section-sep"></div>
 <div class="card">
   <div class="card-title" style="background:#4a6f5a;">④ 分渠道 × 分日期（七日未退款）</div>
-  <div class="tip">口径：订单状态 ≠ 已关闭 &nbsp;·&nbsp; 点击渠道行展开达人</div><details class="ch-block">
+  <div class="tip">口径：订单状态 ≠ 已关闭 &nbsp;·&nbsp; 节奏分析根据七日进量趋势自动生成 &nbsp;·&nbsp; 点击渠道行展开</div><details class="ch-block">
   <summary class="ch-summary">
     <span class="ch-dot lg" style="background:#5c3d8f;"></span>
     <span class="ch-name">最小年轮</span>
@@ -419,100 +386,127 @@ html{scroll-behavior:smooth;}
   </summary>
   <div class="table-wrap inner"><table>
     <thead><tr style="background:#edf4f0;color:#2e5a40;font-weight:600;">
-      <th>达人名称</th><th>05-02</th><th>05-03</th><th>05-04</th><th>05-05</th><th>05-06</th><th>05-07</th><th>05-08</th><th>合计</th>
+      <th>达人名称</th><th>进量节奏</th><th>05-02</th><th>05-03</th><th>05-04</th><th>05-05</th><th>05-06</th><th>05-07</th><th>05-08</th><th>合计</th>
     </tr></thead><tbody><tr>
         <td class="td-left">李老师讲初升高</td>
+        <td style="white-space:nowrap;"><span class="rhythm-tag" style="background:#1a7abf20;color:#1a7abf;border:1px solid #1a7abf40;">近期加速 🔥</span></td>
         <td>0</td><td>2</td><td>4</td><td>0</td><td>48</td><td>38</td><td>53</td>
         <td class="num">145</td>
       </tr><tr>
         <td class="td-left">千佰惠公司聂老师</td>
+        <td style="white-space:nowrap;"><span class="rhythm-tag" style="background:#1a7abf20;color:#1a7abf;border:1px solid #1a7abf40;">近期加速 🔥</span></td>
         <td>0</td><td>0</td><td>0</td><td>0</td><td>18</td><td>35</td><td>21</td>
         <td class="num">74</td>
       </tr><tr>
         <td class="td-left">一线王老师讲选科</td>
+        <td style="white-space:nowrap;"><span class="rhythm-tag" style="background:#27ae6020;color:#27ae60;border:1px solid #27ae6040;">节奏平稳</span></td>
         <td>0</td><td>0</td><td>0</td><td>4</td><td>28</td><td>22</td><td>17</td>
         <td class="num">71</td>
       </tr><tr>
         <td class="td-left">刘老师讲中考a</td>
+        <td style="white-space:nowrap;"><span class="rhythm-tag" style="background:#1a7abf20;color:#1a7abf;border:1px solid #1a7abf40;">近期加速 🔥</span></td>
         <td>0</td><td>2</td><td>2</td><td>0</td><td>5</td><td>13</td><td>19</td>
         <td class="num">41</td>
       </tr><tr>
         <td class="td-left">郝老师聊选科-行知</td>
+        <td style="white-space:nowrap;"><span class="rhythm-tag" style="background:#1a7abf20;color:#1a7abf;border:1px solid #1a7abf40;">近期加速 🔥</span></td>
         <td>0</td><td>2</td><td>1</td><td>1</td><td>10</td><td>4</td><td>13</td>
         <td class="num">31</td>
       </tr><tr>
         <td class="td-left">蔡稳稳</td>
+        <td style="white-space:nowrap;"><span class="rhythm-tag" style="background:#d3540020;color:#d35400;border:1px solid #d3540040;">单日爆发</span></td>
         <td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>28</td><td>0</td>
         <td class="num">28</td>
       </tr><tr>
         <td class="td-left">行知老师讲规划</td>
+        <td style="white-space:nowrap;"><span class="rhythm-tag" style="background:#1a7abf20;color:#1a7abf;border:1px solid #1a7abf40;">近期加速 🔥</span></td>
         <td>0</td><td>0</td><td>1</td><td>4</td><td>6</td><td>5</td><td>9</td>
         <td class="num">25</td>
       </tr><tr>
         <td class="td-left">董老师讲选科</td>
+        <td style="white-space:nowrap;"><span class="rhythm-tag" style="background:#27ae6020;color:#27ae60;border:1px solid #27ae6040;">节奏平稳</span></td>
         <td>0</td><td>0</td><td>0</td><td>4</td><td>6</td><td>0</td><td>12</td>
         <td class="num">22</td>
       </tr><tr>
         <td class="td-left">升学规划.田雨</td>
+        <td style="white-space:nowrap;"><span class="rhythm-tag" style="background:#1a7abf20;color:#1a7abf;border:1px solid #1a7abf40;">近期加速 🔥</span></td>
         <td>0</td><td>0</td><td>2</td><td>2</td><td>0</td><td>7</td><td>8</td>
         <td class="num">19</td>
       </tr><tr>
         <td class="td-left">晶晶老师升学规划</td>
+        <td style="white-space:nowrap;"><span class="rhythm-tag" style="background:#1a7abf20;color:#1a7abf;border:1px solid #1a7abf40;">近期加速 🔥</span></td>
         <td>0</td><td>0</td><td>1</td><td>1</td><td>6</td><td>6</td><td>4</td>
         <td class="num">18</td>
       </tr><tr>
         <td class="td-left">珊伊老师讲高考</td>
+        <td style="white-space:nowrap;"><span class="rhythm-tag" style="background:#8e44ad20;color:#8e44ad;border:1px solid #8e44ad40;">逐步减量</span></td>
         <td>0</td><td>0</td><td>0</td><td>5</td><td>6</td><td>1</td><td>5</td>
         <td class="num">17</td>
       </tr><tr>
         <td class="td-left">初升高升学规划</td>
+        <td style="white-space:nowrap;"><span class="rhythm-tag" style="background:#e67e2220;color:#e67e22;border:1px solid #e67e2240;">单日集中</span></td>
         <td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>7</td><td>10</td>
         <td class="num">17</td>
       </tr><tr>
         <td class="td-left">田老师讲选科</td>
+        <td style="white-space:nowrap;"><span class="rhythm-tag" style="background:#e67e2220;color:#e67e22;border:1px solid #e67e2240;">单日集中</span></td>
         <td>0</td><td>0</td><td>0</td><td>0</td><td>2</td><td>0</td><td>13</td>
         <td class="num">15</td>
       </tr><tr>
         <td class="td-left">初升高升学规划.</td>
+        <td style="white-space:nowrap;"><span class="rhythm-tag" style="background:#d3540020;color:#d35400;border:1px solid #d3540040;">单日爆发</span></td>
         <td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>12</td>
         <td class="num">12</td>
       </tr><tr>
         <td class="td-left">未知达人</td>
+        <td style="white-space:nowrap;"><span class="rhythm-tag" style="background:#d3540020;color:#d35400;border:1px solid #d3540040;">单日爆发</span></td>
         <td>0</td><td>0</td><td>0</td><td>11</td><td>0</td><td>0</td><td>0</td>
         <td class="num">11</td>
       </tr><tr>
         <td class="td-left">王老师说选科</td>
+        <td style="white-space:nowrap;"><span class="rhythm-tag" style="background:#c0392b20;color:#c0392b;border:1px solid #c0392b40;">明显下滑</span></td>
         <td>0</td><td>0</td><td>0</td><td>2</td><td>4</td><td>2</td><td>0</td>
         <td class="num">8</td>
       </tr><tr>
         <td class="td-left">张老师高考规划</td>
+        <td style="white-space:nowrap;"><span class="rhythm-tag" style="background:#d3540020;color:#d35400;border:1px solid #d3540040;">单日爆发</span></td>
         <td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>7</td>
         <td class="num">7</td>
       </tr><tr>
         <td class="td-left">宁老师讲选科</td>
+        <td style="white-space:nowrap;"><span class="rhythm-tag" style="background:#e67e2220;color:#e67e22;border:1px solid #e67e2240;">单日集中</span></td>
         <td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>3</td><td>2</td>
         <td class="num">5</td>
       </tr><tr>
         <td class="td-left">高阶三规划</td>
+        <td style="white-space:nowrap;"><span class="rhythm-tag" style="background:#27ae6020;color:#27ae60;border:1px solid #27ae6040;">节奏平稳</span></td>
         <td>0</td><td>0</td><td>0</td><td>1</td><td>2</td><td>2</td><td>0</td>
         <td class="num">5</td>
       </tr><tr>
         <td class="td-left">赵老师讲选科</td>
+        <td style="white-space:nowrap;"><span class="rhythm-tag" style="background:#d3540020;color:#d35400;border:1px solid #d3540040;">单日爆发</span></td>
         <td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>4</td><td>0</td>
         <td class="num">4</td>
       </tr><tr>
         <td class="td-left">升学规划成丰袁老师</td>
+        <td style="white-space:nowrap;"><span class="rhythm-tag" style="background:#d3540020;color:#d35400;border:1px solid #d3540040;">单日爆发</span></td>
         <td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>1</td>
         <td class="num">1</td>
       </tr><tr>
         <td class="td-left">许老师清北思维</td>
+        <td style="white-space:nowrap;"><span class="rhythm-tag" style="background:#d3540020;color:#d35400;border:1px solid #d3540040;">单日爆发</span></td>
         <td>0</td><td>0</td><td>0</td><td>0</td><td>1</td><td>0</td><td>0</td>
         <td class="num">1</td>
       </tr><tr>
         <td class="td-left">黄老师讲选科</td>
+        <td style="white-space:nowrap;"><span class="rhythm-tag" style="background:#d3540020;color:#d35400;border:1px solid #d3540040;">单日爆发</span></td>
         <td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>1</td><td>0</td>
         <td class="num">1</td>
-      </tr><tr class="subtotal-row"><td class="td-left">小计</td><td class="subtotal-cell">0</td><td class="subtotal-cell">6</td><td class="subtotal-cell">11</td><td class="subtotal-cell">35</td><td class="subtotal-cell">142</td><td class="subtotal-cell">178</td><td class="subtotal-cell">206</td><td class="subtotal-cell strong">578</td></tr></tbody></table></div></details><details class="ch-block">
+      </tr><tr class="subtotal-row">
+    <td class="td-left">小计</td>
+    <td><span class="rhythm-tag" style="background:#1a7abf20;color:#1a7abf;border:1px solid #1a7abf40;">近期加速 🔥</span></td>
+    <td class="subtotal-cell">0</td><td class="subtotal-cell">6</td><td class="subtotal-cell">11</td><td class="subtotal-cell">35</td><td class="subtotal-cell">142</td><td class="subtotal-cell">178</td><td class="subtotal-cell">206</td><td class="subtotal-cell strong">578</td>
+  </tr></tbody></table></div></details><details class="ch-block">
   <summary class="ch-summary">
     <span class="ch-dot lg" style="background:#2a5298;"></span>
     <span class="ch-name">格物致知</span>
@@ -521,20 +515,27 @@ html{scroll-behavior:smooth;}
   </summary>
   <div class="table-wrap inner"><table>
     <thead><tr style="background:#edf4f0;color:#2e5a40;font-weight:600;">
-      <th>达人名称</th><th>05-02</th><th>05-03</th><th>05-04</th><th>05-05</th><th>05-06</th><th>05-07</th><th>05-08</th><th>合计</th>
+      <th>达人名称</th><th>进量节奏</th><th>05-02</th><th>05-03</th><th>05-04</th><th>05-05</th><th>05-06</th><th>05-07</th><th>05-08</th><th>合计</th>
     </tr></thead><tbody><tr>
         <td class="td-left">樊老师读书分享</td>
+        <td style="white-space:nowrap;"><span class="rhythm-tag" style="background:#16a08520;color:#16a085;border:1px solid #16a08540;">逐步增量</span></td>
         <td>0</td><td>0</td><td>3</td><td>44</td><td>24</td><td>35</td><td>25</td>
         <td class="num">131</td>
       </tr><tr>
         <td class="td-left">刘主任升学问答（哔哒教育）</td>
+        <td style="white-space:nowrap;"><span class="rhythm-tag" style="background:#e67e2220;color:#e67e22;border:1px solid #e67e2240;">单日集中</span></td>
         <td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>43</td><td>53</td>
         <td class="num">96</td>
       </tr><tr>
         <td class="td-left">文老师升学规划课堂</td>
+        <td style="white-space:nowrap;"><span class="rhythm-tag" style="background:#1a7abf20;color:#1a7abf;border:1px solid #1a7abf40;">近期加速 🔥</span></td>
         <td>0</td><td>1</td><td>0</td><td>3</td><td>0</td><td>31</td><td>16</td>
         <td class="num">51</td>
-      </tr><tr class="subtotal-row"><td class="td-left">小计</td><td class="subtotal-cell">0</td><td class="subtotal-cell">1</td><td class="subtotal-cell">3</td><td class="subtotal-cell">47</td><td class="subtotal-cell">24</td><td class="subtotal-cell">109</td><td class="subtotal-cell">94</td><td class="subtotal-cell strong">278</td></tr></tbody></table></div></details><details class="ch-block">
+      </tr><tr class="subtotal-row">
+    <td class="td-left">小计</td>
+    <td><span class="rhythm-tag" style="background:#1a7abf20;color:#1a7abf;border:1px solid #1a7abf40;">近期加速 🔥</span></td>
+    <td class="subtotal-cell">0</td><td class="subtotal-cell">1</td><td class="subtotal-cell">3</td><td class="subtotal-cell">47</td><td class="subtotal-cell">24</td><td class="subtotal-cell">109</td><td class="subtotal-cell">94</td><td class="subtotal-cell strong">278</td>
+  </tr></tbody></table></div></details><details class="ch-block">
   <summary class="ch-summary">
     <span class="ch-dot lg" style="background:#2e6b4f;"></span>
     <span class="ch-name">领航</span>
@@ -543,44 +544,57 @@ html{scroll-behavior:smooth;}
   </summary>
   <div class="table-wrap inner"><table>
     <thead><tr style="background:#edf4f0;color:#2e5a40;font-weight:600;">
-      <th>达人名称</th><th>05-02</th><th>05-03</th><th>05-04</th><th>05-05</th><th>05-06</th><th>05-07</th><th>05-08</th><th>合计</th>
+      <th>达人名称</th><th>进量节奏</th><th>05-02</th><th>05-03</th><th>05-04</th><th>05-05</th><th>05-06</th><th>05-07</th><th>05-08</th><th>合计</th>
     </tr></thead><tbody><tr>
         <td class="td-left">升学规划雯老师-泓图</td>
+        <td style="white-space:nowrap;"><span class="rhythm-tag" style="background:#16a08520;color:#16a085;border:1px solid #16a08540;">逐步增量</span></td>
         <td>0</td><td>0</td><td>0</td><td>11</td><td>2</td><td>11</td><td>12</td>
         <td class="num">36</td>
       </tr><tr>
         <td class="td-left">赵主任讲女生规划</td>
+        <td style="white-space:nowrap;"><span class="rhythm-tag" style="background:#27ae6020;color:#27ae60;border:1px solid #27ae6040;">节奏平稳</span></td>
         <td>0</td><td>0</td><td>0</td><td>5</td><td>11</td><td>13</td><td>4</td>
         <td class="num">33</td>
       </tr><tr>
         <td class="td-left">刘老师升学规划</td>
+        <td style="white-space:nowrap;"><span class="rhythm-tag" style="background:#c0392b20;color:#c0392b;border:1px solid #c0392b40;">波动明显</span></td>
         <td>0</td><td>2</td><td>3</td><td>7</td><td>9</td><td>0</td><td>0</td>
         <td class="num">21</td>
       </tr><tr>
         <td class="td-left">马老师升学规划</td>
+        <td style="white-space:nowrap;"><span class="rhythm-tag" style="background:#1a7abf20;color:#1a7abf;border:1px solid #1a7abf40;">近期加速 🔥</span></td>
         <td>0</td><td>0</td><td>1</td><td>2</td><td>5</td><td>10</td><td>2</td>
         <td class="num">20</td>
       </tr><tr>
         <td class="td-left">高中生升学规划</td>
+        <td style="white-space:nowrap;"><span class="rhythm-tag" style="background:#27ae6020;color:#27ae60;border:1px solid #27ae6040;">节奏平稳</span></td>
         <td>2</td><td>4</td><td>3</td><td>4</td><td>7</td><td>0</td><td>0</td>
         <td class="num">20</td>
       </tr><tr>
         <td class="td-left">高中班主任张老师升学</td>
+        <td style="white-space:nowrap;"><span class="rhythm-tag" style="background:#c0392b20;color:#c0392b;border:1px solid #c0392b40;">波动明显</span></td>
         <td>0</td><td>5</td><td>0</td><td>4</td><td>8</td><td>0</td><td>0</td>
         <td class="num">17</td>
       </tr><tr>
         <td class="td-left">陈老师升学规划</td>
+        <td style="white-space:nowrap;"><span class="rhythm-tag" style="background:#1a7abf20;color:#1a7abf;border:1px solid #1a7abf40;">近期加速 🔥</span></td>
         <td>0</td><td>0</td><td>1</td><td>2</td><td>8</td><td>0</td><td>0</td>
         <td class="num">11</td>
       </tr><tr>
         <td class="td-left">小满老师讲选科规划🎓</td>
+        <td style="white-space:nowrap;"><span class="rhythm-tag" style="background:#c0392b20;color:#c0392b;border:1px solid #c0392b40;">明显下滑</span></td>
         <td>0</td><td>0</td><td>0</td><td>2</td><td>6</td><td>0</td><td>1</td>
         <td class="num">9</td>
       </tr><tr>
         <td class="td-left">升学规划白老师</td>
+        <td style="white-space:nowrap;"><span class="rhythm-tag" style="background:#d3540020;color:#d35400;border:1px solid #d3540040;">单日爆发</span></td>
         <td>0</td><td>0</td><td>0</td><td>5</td><td>0</td><td>0</td><td>0</td>
         <td class="num">5</td>
-      </tr><tr class="subtotal-row"><td class="td-left">小计</td><td class="subtotal-cell">2</td><td class="subtotal-cell">11</td><td class="subtotal-cell">8</td><td class="subtotal-cell">42</td><td class="subtotal-cell">56</td><td class="subtotal-cell">34</td><td class="subtotal-cell">19</td><td class="subtotal-cell strong">172</td></tr></tbody></table></div></details><details class="ch-block">
+      </tr><tr class="subtotal-row">
+    <td class="td-left">小计</td>
+    <td><span class="rhythm-tag" style="background:#1a7abf20;color:#1a7abf;border:1px solid #1a7abf40;">近期加速 🔥</span></td>
+    <td class="subtotal-cell">2</td><td class="subtotal-cell">11</td><td class="subtotal-cell">8</td><td class="subtotal-cell">42</td><td class="subtotal-cell">56</td><td class="subtotal-cell">34</td><td class="subtotal-cell">19</td><td class="subtotal-cell strong">172</td>
+  </tr></tbody></table></div></details><details class="ch-block">
   <summary class="ch-summary">
     <span class="ch-dot lg" style="background:#6b4a38;"></span>
     <span class="ch-name">福哥电商</span>
@@ -589,12 +603,17 @@ html{scroll-behavior:smooth;}
   </summary>
   <div class="table-wrap inner"><table>
     <thead><tr style="background:#edf4f0;color:#2e5a40;font-weight:600;">
-      <th>达人名称</th><th>05-02</th><th>05-03</th><th>05-04</th><th>05-05</th><th>05-06</th><th>05-07</th><th>05-08</th><th>合计</th>
+      <th>达人名称</th><th>进量节奏</th><th>05-02</th><th>05-03</th><th>05-04</th><th>05-05</th><th>05-06</th><th>05-07</th><th>05-08</th><th>合计</th>
     </tr></thead><tbody><tr>
         <td class="td-left">步步高就-聊聊初升高</td>
+        <td style="white-space:nowrap;"><span class="rhythm-tag" style="background:#d3540020;color:#d35400;border:1px solid #d3540040;">单日爆发</span></td>
         <td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>56</td>
         <td class="num">56</td>
-      </tr><tr class="subtotal-row"><td class="td-left">小计</td><td class="subtotal-cell">0</td><td class="subtotal-cell">0</td><td class="subtotal-cell">0</td><td class="subtotal-cell">0</td><td class="subtotal-cell">0</td><td class="subtotal-cell">0</td><td class="subtotal-cell">56</td><td class="subtotal-cell strong">56</td></tr></tbody></table></div></details><details class="ch-block">
+      </tr><tr class="subtotal-row">
+    <td class="td-left">小计</td>
+    <td><span class="rhythm-tag" style="background:#d3540020;color:#d35400;border:1px solid #d3540040;">单日爆发</span></td>
+    <td class="subtotal-cell">0</td><td class="subtotal-cell">0</td><td class="subtotal-cell">0</td><td class="subtotal-cell">0</td><td class="subtotal-cell">0</td><td class="subtotal-cell">0</td><td class="subtotal-cell">56</td><td class="subtotal-cell strong">56</td>
+  </tr></tbody></table></div></details><details class="ch-block">
   <summary class="ch-summary">
     <span class="ch-dot lg" style="background:#b5451b;"></span>
     <span class="ch-name">杭州三只咪</span>
@@ -603,48 +622,62 @@ html{scroll-behavior:smooth;}
   </summary>
   <div class="table-wrap inner"><table>
     <thead><tr style="background:#edf4f0;color:#2e5a40;font-weight:600;">
-      <th>达人名称</th><th>05-02</th><th>05-03</th><th>05-04</th><th>05-05</th><th>05-06</th><th>05-07</th><th>05-08</th><th>合计</th>
+      <th>达人名称</th><th>进量节奏</th><th>05-02</th><th>05-03</th><th>05-04</th><th>05-05</th><th>05-06</th><th>05-07</th><th>05-08</th><th>合计</th>
     </tr></thead><tbody><tr>
         <td class="td-left">刘老师思维课堂88</td>
+        <td style="white-space:nowrap;"><span class="rhythm-tag" style="background:#27ae6020;color:#27ae60;border:1px solid #27ae6040;">节奏平稳</span></td>
         <td>0</td><td>0</td><td>0</td><td>4</td><td>7</td><td>6</td><td>5</td>
         <td class="num">22</td>
       </tr><tr>
         <td class="td-left">未知达人</td>
+        <td style="white-space:nowrap;"><span class="rhythm-tag" style="background:#e67e2220;color:#e67e22;border:1px solid #e67e2240;">单日集中</span></td>
         <td>0</td><td>0</td><td>0</td><td>0</td><td>1</td><td>2</td><td>0</td>
         <td class="num">3</td>
       </tr><tr>
         <td class="td-left">小满老师思维课堂</td>
+        <td style="white-space:nowrap;"><span class="rhythm-tag" style="background:#e67e2220;color:#e67e22;border:1px solid #e67e2240;">单日集中</span></td>
         <td>0</td><td>0</td><td>2</td><td>0</td><td>0</td><td>1</td><td>0</td>
         <td class="num">3</td>
       </tr><tr>
         <td class="td-left">浙大奥数莉莉老师</td>
+        <td style="white-space:nowrap;"><span class="rhythm-tag" style="background:#27ae6020;color:#27ae60;border:1px solid #27ae6040;">节奏平稳</span></td>
         <td>0</td><td>0</td><td>0</td><td>0</td><td>1</td><td>1</td><td>0</td>
         <td class="num">2</td>
       </tr><tr>
         <td class="td-left">浙大奥数陈老师</td>
+        <td style="white-space:nowrap;"><span class="rhythm-tag" style="background:#d3540020;color:#d35400;border:1px solid #d3540040;">单日爆发</span></td>
         <td>0</td><td>0</td><td>0</td><td>0</td><td>1</td><td>0</td><td>0</td>
         <td class="num">1</td>
       </tr><tr>
         <td class="td-left">韩老师满分思维课</td>
+        <td style="white-space:nowrap;"><span class="rhythm-tag" style="background:#d3540020;color:#d35400;border:1px solid #d3540040;">单日爆发</span></td>
         <td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>1</td>
         <td class="num">1</td>
       </tr><tr>
         <td class="td-left">宋老师思维学习力</td>
+        <td style="white-space:nowrap;"><span class="rhythm-tag" style="background:#d3540020;color:#d35400;border:1px solid #d3540040;">单日爆发</span></td>
         <td>0</td><td>0</td><td>0</td><td>1</td><td>0</td><td>0</td><td>0</td>
         <td class="num">1</td>
       </tr><tr>
         <td class="td-left">姗姗老师1129</td>
+        <td style="white-space:nowrap;"><span class="rhythm-tag" style="background:#d3540020;color:#d35400;border:1px solid #d3540040;">单日爆发</span></td>
         <td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>1</td><td>0</td>
         <td class="num">1</td>
       </tr><tr>
         <td class="td-left">魏老师思维课堂999</td>
+        <td style="white-space:nowrap;"><span class="rhythm-tag" style="background:#d3540020;color:#d35400;border:1px solid #d3540040;">单日爆发</span></td>
         <td>0</td><td>0</td><td>0</td><td>0</td><td>1</td><td>0</td><td>0</td>
         <td class="num">1</td>
       </tr><tr>
         <td class="td-left">罗老师讲思维（三只咪 ）</td>
+        <td style="white-space:nowrap;"><span class="rhythm-tag" style="background:#d3540020;color:#d35400;border:1px solid #d3540040;">单日爆发</span></td>
         <td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>1</td>
         <td class="num">1</td>
-      </tr><tr class="subtotal-row"><td class="td-left">小计</td><td class="subtotal-cell">0</td><td class="subtotal-cell">0</td><td class="subtotal-cell">2</td><td class="subtotal-cell">5</td><td class="subtotal-cell">11</td><td class="subtotal-cell">11</td><td class="subtotal-cell">7</td><td class="subtotal-cell strong">36</td></tr></tbody></table></div></details><details class="ch-block">
+      </tr><tr class="subtotal-row">
+    <td class="td-left">小计</td>
+    <td><span class="rhythm-tag" style="background:#1a7abf20;color:#1a7abf;border:1px solid #1a7abf40;">近期加速 🔥</span></td>
+    <td class="subtotal-cell">0</td><td class="subtotal-cell">0</td><td class="subtotal-cell">2</td><td class="subtotal-cell">5</td><td class="subtotal-cell">11</td><td class="subtotal-cell">11</td><td class="subtotal-cell">7</td><td class="subtotal-cell strong">36</td>
+  </tr></tbody></table></div></details><details class="ch-block">
   <summary class="ch-summary">
     <span class="ch-dot lg" style="background:#1a6b72;"></span>
     <span class="ch-name">自然流</span>
@@ -653,12 +686,17 @@ html{scroll-behavior:smooth;}
   </summary>
   <div class="table-wrap inner"><table>
     <thead><tr style="background:#edf4f0;color:#2e5a40;font-weight:600;">
-      <th>达人名称</th><th>05-02</th><th>05-03</th><th>05-04</th><th>05-05</th><th>05-06</th><th>05-07</th><th>05-08</th><th>合计</th>
+      <th>达人名称</th><th>进量节奏</th><th>05-02</th><th>05-03</th><th>05-04</th><th>05-05</th><th>05-06</th><th>05-07</th><th>05-08</th><th>合计</th>
     </tr></thead><tbody><tr>
         <td class="td-left">未知达人</td>
+        <td style="white-space:nowrap;"><span class="rhythm-tag" style="background:#1a7abf20;color:#1a7abf;border:1px solid #1a7abf40;">近期加速 🔥</span></td>
         <td>0</td><td>2</td><td>0</td><td>0</td><td>0</td><td>6</td><td>5</td>
         <td class="num">13</td>
-      </tr><tr class="subtotal-row"><td class="td-left">小计</td><td class="subtotal-cell">0</td><td class="subtotal-cell">2</td><td class="subtotal-cell">0</td><td class="subtotal-cell">0</td><td class="subtotal-cell">0</td><td class="subtotal-cell">6</td><td class="subtotal-cell">5</td><td class="subtotal-cell strong">13</td></tr></tbody></table></div></details><details class="ch-block">
+      </tr><tr class="subtotal-row">
+    <td class="td-left">小计</td>
+    <td><span class="rhythm-tag" style="background:#1a7abf20;color:#1a7abf;border:1px solid #1a7abf40;">近期加速 🔥</span></td>
+    <td class="subtotal-cell">0</td><td class="subtotal-cell">2</td><td class="subtotal-cell">0</td><td class="subtotal-cell">0</td><td class="subtotal-cell">0</td><td class="subtotal-cell">6</td><td class="subtotal-cell">5</td><td class="subtotal-cell strong">13</td>
+  </tr></tbody></table></div></details><details class="ch-block">
   <summary class="ch-summary">
     <span class="ch-dot lg" style="background:#5a3060;"></span>
     <span class="ch-name">合肥徽起</span>
@@ -667,12 +705,17 @@ html{scroll-behavior:smooth;}
   </summary>
   <div class="table-wrap inner"><table>
     <thead><tr style="background:#edf4f0;color:#2e5a40;font-weight:600;">
-      <th>达人名称</th><th>05-02</th><th>05-03</th><th>05-04</th><th>05-05</th><th>05-06</th><th>05-07</th><th>05-08</th><th>合计</th>
+      <th>达人名称</th><th>进量节奏</th><th>05-02</th><th>05-03</th><th>05-04</th><th>05-05</th><th>05-06</th><th>05-07</th><th>05-08</th><th>合计</th>
     </tr></thead><tbody><tr>
         <td class="td-left">初升高入团规划大课堂</td>
+        <td style="white-space:nowrap;"><span class="rhythm-tag" style="background:#d3540020;color:#d35400;border:1px solid #d3540040;">单日爆发</span></td>
         <td>0</td><td>0</td><td>0</td><td>0</td><td>2</td><td>0</td><td>0</td>
         <td class="num">2</td>
-      </tr><tr class="subtotal-row"><td class="td-left">小计</td><td class="subtotal-cell">0</td><td class="subtotal-cell">0</td><td class="subtotal-cell">0</td><td class="subtotal-cell">0</td><td class="subtotal-cell">2</td><td class="subtotal-cell">0</td><td class="subtotal-cell">0</td><td class="subtotal-cell strong">2</td></tr></tbody></table></div></details><details class="ch-block">
+      </tr><tr class="subtotal-row">
+    <td class="td-left">小计</td>
+    <td><span class="rhythm-tag" style="background:#d3540020;color:#d35400;border:1px solid #d3540040;">单日爆发</span></td>
+    <td class="subtotal-cell">0</td><td class="subtotal-cell">0</td><td class="subtotal-cell">0</td><td class="subtotal-cell">0</td><td class="subtotal-cell">2</td><td class="subtotal-cell">0</td><td class="subtotal-cell">0</td><td class="subtotal-cell strong">2</td>
+  </tr></tbody></table></div></details><details class="ch-block">
   <summary class="ch-summary">
     <span class="ch-dot lg" style="background:#999;"></span>
     <span class="ch-name">未知渠道</span>
@@ -681,20 +724,21 @@ html{scroll-behavior:smooth;}
   </summary>
   <div class="table-wrap inner"><table>
     <thead><tr style="background:#edf4f0;color:#2e5a40;font-weight:600;">
-      <th>达人名称</th><th>05-02</th><th>05-03</th><th>05-04</th><th>05-05</th><th>05-06</th><th>05-07</th><th>05-08</th><th>合计</th>
+      <th>达人名称</th><th>进量节奏</th><th>05-02</th><th>05-03</th><th>05-04</th><th>05-05</th><th>05-06</th><th>05-07</th><th>05-08</th><th>合计</th>
     </tr></thead><tbody><tr>
         <td class="td-left">未知达人</td>
+        <td style="white-space:nowrap;"><span class="rhythm-tag" style="background:#d3540020;color:#d35400;border:1px solid #d3540040;">单日爆发</span></td>
         <td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>1</td>
         <td class="num">1</td>
-      </tr><tr class="subtotal-row"><td class="td-left">小计</td><td class="subtotal-cell">0</td><td class="subtotal-cell">0</td><td class="subtotal-cell">0</td><td class="subtotal-cell">0</td><td class="subtotal-cell">0</td><td class="subtotal-cell">0</td><td class="subtotal-cell">1</td><td class="subtotal-cell strong">1</td></tr></tbody></table></div></details>
-  <div class="table-wrap" style="margin-top:6px;"><table>
-    <thead><tr class="grand-total-row">
-      <th class="td-left" style="padding:11px 18px;">总计</th>
-      <th>2</th><th>20</th><th>24</th><th>129</th><th>235</th><th>338</th><th>388</th>
-      <th>1136</th>
-    </tr></thead>
-  </table></div>
-</div></div>
+      </tr><tr class="subtotal-row">
+    <td class="td-left">小计</td>
+    <td><span class="rhythm-tag" style="background:#d3540020;color:#d35400;border:1px solid #d3540040;">单日爆发</span></td>
+    <td class="subtotal-cell">0</td><td class="subtotal-cell">0</td><td class="subtotal-cell">0</td><td class="subtotal-cell">0</td><td class="subtotal-cell">0</td><td class="subtotal-cell">0</td><td class="subtotal-cell">1</td><td class="subtotal-cell strong">1</td>
+  </tr></tbody></table></div></details><div class="table-wrap" style="margin-top:6px;"><table>
+  <thead><tr class="grand-total-row">
+    <th class="td-left" style="padding:11px 18px;">总计</th><th></th>
+    <th>2</th><th>20</th><th>24</th><th>129</th><th>235</th><th>338</th><th>388</th><th>1136</th>
+  </tr></thead>
+</table></div></div></div>
 </div>
-
 </body></html>
